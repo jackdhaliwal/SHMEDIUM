@@ -3,6 +3,8 @@
 <% @posts.each do |post| %>
   <article>
     <header>
+     
+      <%= image_for(post) %>
       <h2><%= link_to post.title, post %></h2>
     </header>
     <p>

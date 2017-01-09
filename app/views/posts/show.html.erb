@@ -20,10 +20,13 @@
       </tr>
     </table>
   </article>
+
+  <h3>Image</h3> 
+    <%= image_for(@post) %>
   
   <nav>
   
-  <%= link_to("All Posts", posts_path) %>
-   |
-  <%= link_to "Edit", edit_post_path(@post) %>
+  <%= link_to("All Posts", posts_path) %> |
+  <%= link_to "Edit", edit_post_path(@post) %> |
+  <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
 </nav>

@@ -20,6 +20,10 @@
     <%= f.number_field :read_length %>
   </p>
   <p>
+    <%= f.label :image_file_name %><br/>
+    <%= f.text_field :image_file_name, placeholder: "GIF, JPG, PNG" %>
+</p>
+  <p>
     <%= f.submit %>
     <%= link_to "Cancel", posts_path %>
   </p>
