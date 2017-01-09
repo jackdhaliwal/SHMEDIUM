@@ -6,12 +6,12 @@
       <h2><%= post.title %></h2>
     </header>
     <p>
-      <%= post.description %>
+      <%= truncate(post.description, length: 40, separator: ' ') %>
     </p>
     <table>
       <tr>
         <th>Read Time:</th>
-        <td><%= post.read_length %></td>
+        <td><%= post.read_length %> min</td>
       </tr>
       <tr>
         <th>Published:</th>

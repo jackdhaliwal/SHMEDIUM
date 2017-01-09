@@ -1,0 +1,22 @@
+<article>
+    <header>
+      <h2><%= @post.title %></h2>
+    </header>
+    <p>
+      <%= truncate(@post.description, length: 40, separator: ' ') %>
+    </p>
+    <table>
+      <tr>
+        <th>Read Time:</th>
+        <td><%= @post.read_length %> min</td>
+      </tr>
+      <tr>
+        <th>Published:</th>
+        <td><%= time_ago_in_words(@post.published) %></td>
+      </tr>
+      <tr>
+        <th>Category:</th>
+        <td><%= @post.category %></td>
+      </tr>
+    </table>
+  </article>
