@@ -11,7 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require medium-editor
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
 
