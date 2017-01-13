@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require phrasing
 //= require medium-editor
 //= require jquery_ujs
 //= require bootstrap

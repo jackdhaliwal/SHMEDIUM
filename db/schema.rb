@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170112234039) do
+ActiveRecord::Schema.define(version: 20170113070039) do
+
+  create_table "phrasing_phrases", force: :cascade do |t|
+    t.string   "locale"
+    t.string   "key"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["locale", "key"], name: "index_phrasing_phrases_on_locale_and_key", unique: true
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"

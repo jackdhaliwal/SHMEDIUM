@@ -14,6 +14,9 @@ gem 'font-awesome-rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'autoprefixer-rails'
 
+#phrasing
+gem "phrasing"
+
 # mediumeditor
 gem 'medium-editor-rails'
 
