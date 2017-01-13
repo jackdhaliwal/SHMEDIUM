@@ -14,6 +14,13 @@ gem 'font-awesome-rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'autoprefixer-rails'
 
+#devise/omni
+gem 'devise'
+gem 'omniauth-facebook'
+
+#fig
+gem "figaro"
+
 #phrasing
 gem "phrasing"
 
