@@ -38,5 +38,5 @@ end
 private
 
   def post_params
-    params.require(:post).permit(:title, :description, :category, :published, :read_length, :image_file_name)
+    params.require(:post).permit(:title, :description, :category, :published, :read_length)
   end

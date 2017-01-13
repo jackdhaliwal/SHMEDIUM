@@ -1,30 +1,19 @@
-<%= form_for(@post) do |f| %>
-  <p>
-    <%= f.label :title %><br/>
-    <%= f.text_field :title, autofocus: true %>
-  </p>
-  <p>
-    <%= f.label :description %><br/>
-    <%= f.text_area :description, cols: 40, rows: 7 %>
-  </p>
-  <p>
-    <%= f.label :category %><br/>
-    <%= f.text_field :category, size: 5 %>
-  </p>
-  <p>
-    <%= f.label :published %><br/>
-    <%= f.date_select :published %>
-  </p>
-  <p>
-    <%= f.label :read_length %><br/>
-    <%= f.number_field :read_length %>
-  </p>
-  <p>
-    <%= f.label :image_file_name %><br/>
-    <%= f.text_field :image_file_name, placeholder: "GIF, JPG, PNG" %>
-</p>
-  <p>
-    <%= f.submit %>
-    <%= link_to "Cancel", posts_path %>
-  </p>
-<% end %>
+<div class="well">
+<div class="form-group">
+<form role="form">
+  <div class="form-group,>
+    <label class="control-label" for="exampleInputEmail1"></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    <p class="help-block">Lorem ipsum dolor sit amet</p>
+  </div>
+
+  <div class="form-group">
+    <a id="post-attachment" href="javascript:void(0);" class="pull-right btn btn-primary">
+      <%= fa_icon 'image' %>
+    </a>
+  
+  <button type="submit" class="btn btn-primary">Share</button>
+</form>
+</div>
+
+<div></div>

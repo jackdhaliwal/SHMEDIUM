@@ -1,32 +1,16 @@
-<article>
-    <header>
-      <h2><%= @post.title %></h2>
-    </header>
-    <p>
-      <%= truncate(@post.description, length: 40, separator: ' ') %>
-    </p>
-    <table>
-      <tr>
-        <th>Read Time:</th>
-        <td><%= @post.read_length %> min</td>
-      </tr>
-      <tr>
-        <th>Published:</th>
-        <td><%= time_ago_in_words(@post.published) %></td>
-      </tr>
-      <tr>
-        <th>Category:</th>
-        <td><%= @post.category %></td>
-      </tr>
-    </table>
-  </article>
+  <header>
+ 
+    <h1><%= @post.title %></h1>
+    <h2>Released: <%= @post.description %></h2>
+  </header>
 
-  <h3>Image</h3> 
-    <%= image_for(@post) %>
+  <p>
+    <%= @post.description %>
+  </p>
   
-  <nav>
+
   
-  <%= link_to("All Posts", posts_path) %> |
-  <%= link_to "Edit", edit_post_path(@post) %> |
-  <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
-</nav>
+  <h3>Cast</h3>
+  <p>
+    <%= @post.description %>
+  </p>
