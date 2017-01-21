@@ -1,27 +1,17 @@
-<div class="well">
-
-<p <div class="editable"></div>
-
-<script>
-  var editor = new MediumEditor('.editable', {
-    placeholder: {
-        /* This example includes the default options for placeholder,
-           if nothing is passed this is what it used */
-        text: 'Write your story',
-        hideOnClick: true
-    }
-    // options go here
-  });
-</script>
-  <div class="form-group">
-    <a id="post-attachment" href="javascript:void(0);" class="pull-right btn btn-primary">
-      <%= fa_icon 'image' %>
-    </a>
-  
-  <button type="submit" class="btn btn-primary">Share</button></p>
-  </div>
+<div>
 
 
+
+<ul>
+  <% TwitterApi.our_public_tweets.each do |tweet| %>
+  <li>
+    <%= tweet.text %>
+  </li>
+  <li>
+    <%= parsed_tweet tweet %>
+  </li>
+  <% end %>
+</ul>
 
 </div>
 

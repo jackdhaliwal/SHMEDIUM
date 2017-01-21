@@ -18,6 +18,9 @@ gem 'autoprefixer-rails'
 gem 'devise'
 gem 'omniauth-facebook'
 
+#twitter
+gem "twitter"
+
 #fig
 gem "figaro"
 

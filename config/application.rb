@@ -13,5 +13,7 @@ module Blog
       ActiveRecord::Base.connection
     end
     
+    config.autoload_paths += %W(#{config.root}/lib)
+
   end
 end
