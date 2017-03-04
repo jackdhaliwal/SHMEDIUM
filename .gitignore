@@ -23,5 +23,4 @@
 # Ignore application configuration
 /config/application.yml
 
-#Ignore devise.rb
-/config/initializers/devise.rb
+
