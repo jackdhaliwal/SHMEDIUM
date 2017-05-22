@@ -7,44 +7,20 @@
         </div>
 
 
-<h4><i class="fa fa-book" aria-hidden="true"></i> MY STORIES</h4>
+<h4><i class="fa fa-book" aria-hidden="true"></i> What's new?</h4>
 <div class="well">
     
     <hr>
    
-  <% @posts.each do |post| %>
+ 
    
-        <header>
-          
-        <%= image_tag(post.image_file_name, :class => 'img-responsive') unless post.image_file_name.blank? %>
-          <h2><%= link_to post.title, post %> (<%= post.category %>)</h2>
-          <h3><%= post.read_length %></h3>
-        </header>
-        <p>
-          <%= truncate(post.description, length: 150, separator: ' ') %>
-        </p>
-        <table>
-          <tr>
-            <th>Category</th>
-            <td><%= post.category %></td>
-          </tr>
-          <tr>
-    
+
         </table>
         <footer>
         </footer>
       
    
-  <% end %>
-</div>
 
-
-
-
-       
-       
-       
-</div>
 
     
 
