@@ -3,6 +3,8 @@ class TwitterApi
         client.user_timeline('@jdhaliwal24', count: 5, exclude_replies: false, include_rts: true)
     end
     
+
+    
     def self.client
         Twitter::REST::Client.new do |config|
         config.consumer_key = 'mFMI9WWyL2rwYKFtjwcVPi5yB'
