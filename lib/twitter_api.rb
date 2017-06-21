@@ -1,6 +1,6 @@
 class TwitterApi
     def self.our_public_tweets
-        client.user_timeline('@jdhaliwal24', count: 5, exclude_replies: true, include_rts: true)
+        client.user_timeline('@jdhaliwal24', count: 5, exclude_replies: true, include_rts: false)
     end
     
 
