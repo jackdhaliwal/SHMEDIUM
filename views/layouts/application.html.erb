@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SHMEDIUM</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    
+    
+    <%= render 'shared/navbar' %>
+    <% unless notice.blank? %>
+      <div class="alert alert-info alert-dismissable alert-fixed">
+        <%= notice %>
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      </div>
+    <% end %>
+    <% unless alert.blank? %>
+      <div class="alert alert-danger alert-dismissable alert-fixed">
+        <%= alert %>
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      </div>
+    <% end %>
+    <div class="container">
+<% if current_user %>
+      Signed in as <strong>Jack</strong>!
+      <%= link_to "Sign out", destroy_user_session_path, id: "sign_out", :method => :delete %>
+    
+    <% else %>
+  <li><%= link_to "Sign in with Facebook",user_facebook_omniauth_authorize_path(:facebook) %></li>
+  <% end %>
+      
+      <%= yield %>
+      
+    </div>
+  
+  </body>
+  <%= render 'shared/footer' %>
+</html>

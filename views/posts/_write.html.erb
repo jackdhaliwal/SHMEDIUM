@@ -1,0 +1,19 @@
+<div>
+
+
+
+<ul>
+  <% TwitterApi.our_public_tweets.each do |tweet| %>
+  <li>
+    <%= tweet.text %>
+  </li>
+  <li>
+    <%= parsed_tweet tweet %>
+  </li>
+  <% end %>
+</ul>
+
+</div>
+
+<div></div>
+
