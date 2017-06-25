@@ -9,3 +9,4 @@ Rails.application.routes.draw do
   get "/pages/tutorials", to: "pages#tutorials"
   get "/pages/projects", to: "pages#projects"
 end
+
