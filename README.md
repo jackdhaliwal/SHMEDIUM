@@ -1,24 +1,15 @@
-# README
+# SHMEDIUM - Brinder Dhaliwal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Overview
 
-* Ruby version
+SHMEDIUM is my portfolio portal built using Ruby on Rails. It's free &amp; completely open source.
 
-* System dependencies
+## Features
 
-* Configuration
 
-* Database creation
+## Contact
+Brinder Dhaliwal
+Email: brinder.dhaliwal13@gmail.com
+Twitter: @jdhaliwal24
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
