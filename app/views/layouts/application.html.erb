@@ -24,13 +24,16 @@
     <% end %>
     <div class="container">
 <% if current_user %>
-      Signed in as <strong>current_user.name</strong>
+      Signed in as <strong>@User.</strong>
       <%= link_to "Sign out", destroy_user_session_path, id: "sign_out", :method => :delete %>
     
     <% else %>
 
   <% end %>
       
+      
+      <p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
       <%= yield %>
       
     </div>
