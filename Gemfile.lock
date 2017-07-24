@@ -64,6 +64,8 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-guests (0.6.0)
+      devise
     domain_name (0.5.20161129)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
@@ -267,6 +269,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
+  devise-guests
   figaro
   font-awesome-rails
   jbuilder (~> 2.5)

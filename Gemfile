@@ -19,6 +19,9 @@ gem 'autoprefixer-rails'
 gem 'devise'
 gem 'omniauth-facebook'
 
+#Devise guests
+gem 'devise-guests'
+
 #twitter
 gem "twitter"
 

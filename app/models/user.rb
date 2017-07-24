@@ -5,8 +5,8 @@ class User < ApplicationRecord
 if Rails.env.production?
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
 else 
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
+  devise :recoverable,:omniauthable,:trackable,:validatable, :registerable,:database_authenticatable,:rememberable, :omniauth_providers => [:facebook]
+         #:validatable, ,:registerable,:database_authenticatable,:rememberable
 end
   def self.from_omniauth(auth)
   where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
