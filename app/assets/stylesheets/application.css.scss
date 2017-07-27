@@ -28,4 +28,34 @@ body { padding-top: 70px; }
 
 h4 { text-align: center}
 
-
+.carousel.fade{
+	opacity:1
+}
+.carousel.fade>.carousel-inner>.item{
+	-moz-transition:opacity ease-in-out .6s;
+	-o-transition:opacity ease-in-out .6s;
+	-webkit-transition:opacity ease-in-out .6s;
+	transition:opacity ease-in-out .6s;
+	left:0 !important;
+	opacity:0;
+	top:0;
+	position:absolute;
+	width:100%;
+	display:block !important;
+	z-index:1;
+}
+.carousel.fade>.carousel-inner>.item:first-child{
+	top:auto;
+	position:relative;
+}
+.carousel.fade>.carousel-inner>.active{
+	opacity:1;
+	-moz-transition:opacity ease-in-out .6s;
+	-o-transition:opacity ease-in-out .6s;
+	-webkit-transition:opacity ease-in-out .6s;
+	transition:opacity ease-in-out .6s;
+	z-index:2
+}
+.carousel.fade>.carousel-control{
+	z-index:2
+}
