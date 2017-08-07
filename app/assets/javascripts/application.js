@@ -16,3 +16,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+$('.mvp img').css("margin-left", ($('.mvp').width() / 2) - ($('.mvp img').width() / 2));

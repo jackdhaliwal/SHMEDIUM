@@ -59,3 +59,18 @@ h4 { text-align: center}
 .carousel.fade>.carousel-control{
 	z-index:2
 }
+
+
+.mvp {
+    margin:auto;
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.mvp img {
+    /*position: relative;*/
+    max-width:300%;
+    max-height: 100%;
+    cursor:pointer;
+}
