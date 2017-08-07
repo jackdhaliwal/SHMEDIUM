@@ -9,7 +9,35 @@
 
 <h4><i class="fa fa-book" aria-hidden="true"></i> What's new?</h4>
 <div class="well">
-    
+    <h5>
+        <i>
+           August 6th, 2017 Sunday, 12:15PM
+        </i>
+    </h5>
+    <h6>
+        
+            
+
+<b>Today's Progress/thoughts:</b><br> <br>
+Wrote up a detailed blog post about my (and my team's experience) from AngelHack, last weekend. Please check it out:
+ <%= link_to "My First Hackathon", "https://medium.com/@jackdhaliwal/my-first-hackathon-team-my-circle-c2758852ee64" %> <br><br>
+
+Additionally, I've decided to dive into DS/Algorithims studying a bit more this month as I can definitely use more practice. I worked on 2.3 in CTCI today (Delete Middle Node) which I found to be relatively simple. I used my notebook to write out the approach/logic/code this time and I focused on trying to understand the java code as best as possible. 
+<br>
+<b>We are asked:</b> Implement algorithim to delete a node in the middle (any node but the middle or first) of a singly linked list, give only access to that node.<br>
+<br>
+<b>Approach:</b> In a singly linked list, we know that we have access to the data of the current node, the id of the current node, and the next pointer of the current node which gives us access to the next node and the node after that etc.In regard to deleting a node from a linked list, we can point the next pointer of the previous node to the node after the current to break the link between the previous and the current node/establish the link between the previous and the next. This would effectively delete the current node in a linked list, and we can use this approach as a guide for our problem.
+<br><Br>
+<b>To delete our "middle node" in this problem, we:</b><br><br>
+1. Check to see if we're at the tail or the next node is at the tail by checking to see if both nodes are null.<br>
+2. Copy the id from the next to the current node.<br>
+2a. Copy data from the next to the current.<br>
+3. Point next pointer of current node to the the node we just deleted's next. (get rid of connection and connect previous to next.next. <br><Br>
+
+
+<b>Link(s) to work:</b> <%= link_to "Delete Middle Node", "http://image-store.slidesharecdn.com/fc4ea167-8791-4516-9dc0-420b083c7ff5-original.jpeg" %>
+        
+    </h6>
    
    
  
