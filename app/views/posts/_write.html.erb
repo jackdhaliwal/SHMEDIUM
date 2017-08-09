@@ -1,8 +1,7 @@
-<center>
-  <% TwitterApi.our_public_tweets.each do |tweet| %>
-   
-      <%= parsed_tweet tweet %>
-  
-   <% end %>
- </center>
-  
+<ul>
+    <% TwitterApi.our_public_tweets.each do |tweet| %>
+
+  <li>
+      <%= parsed_tweet tweet %><br>
+    </li>
+    <% end %>
