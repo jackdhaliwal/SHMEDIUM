@@ -1,3 +1,6 @@
+require 'twitter_api'
+
+
 class PostsController < ApplicationController
 
 	def index
