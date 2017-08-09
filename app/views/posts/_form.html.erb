@@ -1,33 +1,103 @@
 <div="well">
 
-<%= form_for(@post) do |f| %>
-  <fieldset>
-    <ol>
-      <li>
-        <%= f.label :title %>
-        <%= f.text_field :title, autofocus: true %>
-      </li>
-      <li>
-        <%= f.label :description %>
-        <%= f.text_area :description, cols: 40, rows: 7 %>
-      </li>
-      <li>
-        <%= f.label :read_length %>
-        <%= f.number_field :read_length %>
-      </li>
-      <li>
-        <%= f.label :published %>
-        <%= f.date_select :published %>
-      </li>
-      <li>
-        <%= f.label :image_file_name %>
-        <%= f.text_field :image_file_name, size: 10 %>
-      </li>
+<p>
+<div class="well DivWithScroll"
+    <h5>
+        <i>
+           August 6th, 2017 Sunday, 12:15PM
+        </i>
+    </h5>
+    <h6>
+        
+            
 
-    </ol>
-    <p>
-      <%= f.submit %>
-      <%= link_to "Cancel", posts_path, class: 'button' %>
+<b>Today's Progress/thoughts:</b><br> <br>
+Wrote up a detailed blog post about my (and my team's experience) from AngelHack, last weekend. Please check it out:
+ <%= link_to "My First Hackathon", "https://medium.com/@jackdhaliwal/my-first-hackathon-team-my-circle-c2758852ee64" %> <br><br>
+
+Additionally, I've decided to dive into DS/Algorithims studying a bit more this month as I can definitely use more practice. I worked on 2.3 in CTCI today (Delete Middle Node) which I found to be relatively simple. I used my notebook to write out the approach/logic/code this time and I focused on trying to understand the java code as best as possible. 
+<br>
+<b>We are asked:</b> Implement algorithim to delete a node in the middle (any node but the middle or first) of a singly linked list, give only access to that node.<br>
+<br>
+<b>Approach:</b> In a singly linked list, we know that we have access to the data of the current node, the id of the current node, and the next pointer of the current node which gives us access to the next node and the node after that etc.In regard to deleting a node from a linked list, we can point the next pointer of the previous node to the node after the current to break the link between the previous and the current node/establish the link between the previous and the next. This would effectively delete the current node in a linked list, and we can use this approach as a guide for our problem.
+<br><Br>
+<b>To delete our "middle node" in this problem, we:</b><br><br>
+1. Check to see if we're at the tail or the next node is at the tail by checking to see if both nodes are null.<br>
+2. Copy the id from the next to the current node.<br>
+2a. Copy data from the next to the current.<br>
+3. Point next pointer of current node to the the node we just deleted's next. (get rid of connection and connect previous to next.next. <br><Br>
+
+
+<b>Link(s) to work:</b> <%= link_to "Delete Middle Node", "http://image-store.slidesharecdn.com/fc4ea167-8791-4516-9dc0-420b083c7ff5-original.jpeg" %>
+    
+    </h6>
     </p>
-  </fieldset>
-<% end %>
+<br>
+<h5>
+        <i>
+           August 1st, 2017 Monday, 9:35PM
+        </i>
+    </h5>
+    <h6>
+        
+            
+
+<b>Today's Progress/thoughts:</b><br> <br>
+Took some time away for the Angel Hack Hackathon this past weekend, but I'm back at it! Skipped 2.1 in Linked lists (CTCI), as I couldn't wrap my head around the solution, but plan to come back. For now, I worked through the solution of 2.2 (Implement algorithim to find kth to last element of a singly linked list). <br><br>
+- Used the iterative approach <br>
+- Two pointers to keep track of current and follower nodes.<br>
+- Place them k nodes apart by putting p2 at beginning and moving p1 k nodes til we hit null.<br>
+- p2 would follow in sync and then Length(at which place p1 hits null) - k (position of p2 node) will give us the output that we want.<br> 
+<br>
+Excited and am working on a blog post for this past weekend. Amazing experience. Coming soon! <br><br>
+
+
+
+<b>Link(s) to work:</b> <%= link_to "KTH-To-Last", "http://image-store.slidesharecdn.com/1fe66fe1-5c18-4be4-a8e0-286a9050d5e8-original.jpeg" %>
+        
+    </h6>
+    
+    
+    
+<br>
+<h5>
+        <i>
+           July 25th, 2017 Tues, 12:04AM
+        </i>
+    </h5>
+    <h6>
+        
+            
+
+<b>Today's Progress/thoughts:</b><br> <br>
+Finished 1.9 - String Rotation in CTCI today. I wrote out a solution on the whiteboard and followed an example online to make sure the logic stuck. Surprisingly simple algorithim. 
+<br><br>
+<b>Question:</b> We have a function "isSubstring" which checks whether a string is substring of another. Given two strings s1 and s2, write code to check if s2 is a rotation of s1 using only one call to "isSubstring".
+<br><br>
+<b>Example of substrings:</b> - Original: "waterbottle"
+                       - Candidate for substring: "erbottle 
+<br>
+<br>
+
+<b></b>Approach:</b> <br>
+          - ensure lengths are the same<br>
+          - ensure both are > 0<br>
+          - assign a new variable to (s1 + s1)<br>
+          - make one call to isSubstring<br>
+<br>
+<br>
+<b>Solution:</b> To check if one string (s2) is a rotation of another (s1), I learned that we can take the original, in this case s1.. and concatonate it to itself, assign this to a new variable (newS1=s1+s1), and then pass in the new variable along with the second string in our one function call.
+<br><br>
+<b>Ex:</b> isSubstring(newS1,s2)
+<br><br>
+We can then try and newS1.find(s2) [try to find the second string in the new concatonation of the original] and if it is found, it's a rotation! <br><br>
+<b>Ex:</b><br> s1= waterbottle<br>
+    s2= erbottle<br>
+    newS1=waterbottlewaterbottle<br>
+    s2 is a rotation of s1! <br>
+
+
+
+        
+    </h6>
+    
