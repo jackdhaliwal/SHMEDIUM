@@ -2,6 +2,37 @@
 
 <p>
 <div class="well DivWithScroll"
+
+       <h5>
+        <i>
+           Day "30": August 15th, 2017 Tuesday, 10:00PM
+        </i>
+    </h5>
+    <h6>
+        
+            
+
+<b>Today's Progress/thoughts:</b><br> <br>
+Worked through "Single Number" on LeetCode this evening. We are asked: Given an array of integers, every element appears twice except for one. Find that single one.<br><br>
+
+Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?<br><Br>
+
+
+
+<b>Approach:</b> Although this problem looked intimidating at first, after gaining a basic understanding of XOR in Java, I was able to understand that we could use it to return all like pairs of elements along with the single one that we are trying to find.
+
+We traverse through the array via a for loop and store the the result of each pair of elements (and the single one) in the result variable: result^=nums[i];<br>
+When using XOR, it will return false (0) any time both A & B values are the same.<br> Ex: 0^0 == 0, 1^1 == 0, false^false==false.
+<br><br>An illustration of our function looks like the following: N1 ^ N1 ^ N2 ^ N2 ...Nx ^ Nx ^N <br> = (N1^N1) ^ (N2^N2) ... (Nx^Nx)^N<br> = 0^0 ^ 0^0 ... 0^0 ^N<br> = N (our single element)
+..all with no extra memory use and in O(n) or linear time kinda cool!<Br>
+<br>
+
+<b>Link(s) to work:</b> <%= link_to "LeetCode - Find Single Number from Array", "http://image-store.slidesharecdn.com/2c63c75a-a94e-4398-aa37-0e20ab7d1144-original.png" %><br>
+
+    
+    </h6>
+    </p>
+<br>
    
        <h5>
         <i>
